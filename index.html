@@ -47,7 +47,7 @@
   <!-- background music section -->
   <!-- ======= Mobile nav toggle button ======= -->
   <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
-  <i class="bi bi-list mobile-nav-toggle d-lg-none d-none"></i>
+  <i id="list" class="bi bi-list mobile-nav-toggle d-lg-none d-none"></i>
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex flex-column justify-content-center d-none">
 
@@ -516,6 +516,8 @@ function buka(){
   const element = document.getElementById("hero");
   audio.play();
   document.getElementById("fullcontent").classList.remove("d-none");
+  document.getElementById("header").classList.remove("d-none");
+  document.getElementById("list").classList.remove("d-none");
   
   document.getElementById("cover-blur").classList.add("d-none");
   document.getElementById("cover").classList.add("d-none");
