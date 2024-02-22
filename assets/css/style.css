@@ -429,6 +429,199 @@ font-family: "Cormorant", sans-serif;
 
 }
 
+#cover-blur {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/bg.png") top center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/*--------------------------------------------------------------
+# cover Section
+--------------------------------------------------------------*/
+#cover {
+  width: 100%;
+  height: 100vh;
+  /* background: url("../img/bg.png") top center no-repeat; */
+  background-size: cover;
+  position: relative;
+}
+
+@media (min-width: 992px) {
+  #cover {
+    text-align: center;
+  }
+
+  #cover .walimatulurus {
+    width: 30%;
+    letter-spacing:10px;
+  }
+
+  #cover .walimatulurustext {
+    letter-spacing:10px;
+  }
+
+  .section-title p {
+    font-size: 1.5vw;
+  }
+
+  #cover table{
+    width:30%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-title table {
+    font-size: 1.5vw;
+    width: 100%;
+  }
+
+  .section-title .countdown {
+    font-size: 50px;
+  }
+
+}
+
+#cover:before {
+  content: "";
+  /* background: rgba(255, 255, 255, 0.8); */
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#cover .walimatulurustext {
+  color: #000000;
+}
+
+#cover h1 {
+  margin: 0;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: "Slights", sans-serif;
+  color:#b48b58;
+}
+
+#cover p {
+  color: #b48b58;
+  margin: 15px 0 0 0;
+  font-size: 18px;
+  font-family: "Cormorant", sans-serif;
+}
+
+#cover p span {
+  color:#b48b58;
+  letter-spacing: 1px;
+}
+
+#cover .social-links {
+  margin-top: 30px;
+}
+
+#cover .social-links a {
+  font-size: 24px;
+  display: inline-block;
+  color: #45505b;
+  line-height: 1;
+  margin-right: 20px;
+  transition: 0.3s;
+}
+
+#cover .social-links a:hover {
+  color: #0563bb;
+}
+
+#cover td{
+color: #b48b58;
+font-size: 18px;
+font-family: "Cormorant", sans-serif;
+}
+
+@media (max-width: 992px) {
+  #cover {
+    text-align: center;
+  }
+
+  #cover h1 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  #cover p {
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  #cover .name {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  #cover .walimatulurus {
+    width: 50%;
+  }
+
+  #cover table{
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-title p {
+    font-size: 4vw;
+  }
+
+  .section-title table {
+    font-size: 4vw;
+    width: 100%;
+  }
+
+  .section-title .countdown {
+    font-size: 40px;
+  }
+
+}
+
+
+.bg-image {
+  /* The image used */
+  background-image: url(".../img/bg");
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  width: 100%;
+  height: 100vh;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  /* text-align: center; */
+  color: black;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+}
+
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/

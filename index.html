@@ -47,9 +47,9 @@
   <!-- background music section -->
   <!-- ======= Mobile nav toggle button ======= -->
   <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
-  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+  <i class="bi bi-list mobile-nav-toggle d-lg-none d-none"></i>
   <!-- ======= Header ======= -->
-  <header id="header" class="d-flex flex-column justify-content-center">
+  <header id="header" class="d-flex flex-column justify-content-center d-none">
 
     <nav id="navbar" class="navbar nav-menu">
       <ul>
@@ -70,6 +70,73 @@
 
   </header><!-- End Header -->
 
+
+  <!-- ======= Hero Section ======= -->
+  <section id="cover-blur" class="d-flex flex-column justify-content-center" style="filter: blur(1.5px);-webkit-filter: blur(1.5px); position: absolute;" >
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+    </div>
+  </section><!-- End Hero -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="cover" class="d-flex flex-column justify-content-center">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <img class="walimatulurus" src="./assets/img/walimatulurus.png" />
+      <p class="walimatulurustext">WALIMATULU'RUS</p>
+      <br>
+      <br>
+      <h1>Nurin
+        <br>
+        &
+        <br>
+        Azrin
+      </h1>
+      <br>
+      <br>
+      <button id="bukabutton" class="btn btn-primary;" style="background-color:#b48b58; color: white;" onClick="buka()">Buka</button>
+      <br>
+      <br>
+      <p><span class="typed"
+          data-typed-items="Save The Date, #NurinAzrin"></span>
+      </p>
+    </div>
+  </section><!-- End Hero -->
+
+
+  <!-- <section id="hero" class="d-flex flex-column justify-content-center" style="  filter: blur(1px); -webkit-filter: blur(2px);">
+  </section>
+
+  <div class="bg-text d-flex flex-column justify-content-center" style="width: 100%vd; height: 100%vh; text-align: center;">
+    <img src="./assets/img/walimatulurus.png" style="width: 30%;"/>
+    <p class="walimatulurustext">WALIMATULU'RUS</p>
+  </div> -->
+
+  <!-- <div id="cover" class="bg-text">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <img class="walimatulurus" src="./assets/img/walimatulurus.png" />
+      <p class="walimatulurustext">WALIMATULU'RUS</p>
+      <br>
+      <br>
+      <h1>Nurin
+        <br>
+        &
+        <br>
+        Azrin
+      </h1>
+      <br>
+      <br>
+      <button id="audiobutton" class="btn btn-sm btn-primary;" style="background-color:#b48b58; color: white;"><i
+          id="audiobuttoncontent" class="bi-volume-up-fill"></i> Music</button>
+      <br>
+      <br>
+      <p>D'INAP DESA SERI ISKANDAR</p>
+      <p><span class="typed"
+          data-typed-items="Save The Date, 13 April 2024, 4 Syawal 1445H, 11.00 Pagi, D'Inap Desa Seri Iskandar, #NurinAzrin, #AzriNurin"></span>
+      </p>
+      <p>#NurinAzrin</p>
+    </div>
+  </div> -->
+
+<div id="fullcontent" class="d-none">
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
@@ -243,44 +310,37 @@
           <table>
             <tr>
               <td>Abdul Tahir (Bapa)</td>
-              <td>xxxxxxxxxx</td>
-              <td><i class="bi bi-telephone"></i> Panggil</td>
+              <td><i class="bi bi-telephone"></i> Dail</td>
               <td><i class="bi bi-whatsapp"></i> WhatsApp</td>
             </tr>
             <tr>
               <td>Hamidah (Ibu)</td>
-              <td>xxxxxxxxxx</td>
-              <td><i class="bi bi-telephone"></i> Panggil</td>
+              <td><i class="bi bi-telephone"></i> Dail</td>
               <td><i class="bi bi-whatsapp"></i> WhatsApp</td>
             </tr>
             <tr>
               <td>Nurin</td>
-              <td>xxxxxxxxxx</td>
-              <td><i class="bi bi-telephone"></i> Panggil</td>
+              <td><i class="bi bi-telephone"></i> Dail</td>
               <td><i class="bi bi-whatsapp"></i> WhatsApp</td>
             </tr>
             <tr>
               <td>Faiz (Kakak)</td>
-              <td>xxxxxxxxxx</td>
-              <td><i class="bi bi-telephone"></i> Panggil</td>
+              <td><i class="bi bi-telephone"></i> Dail</td>
               <td><i class="bi bi-whatsapp"></i> WhatsApp</td>
             </tr>
             <tr>
               <td>Aqilah (Kakak)</td>
-              <td>xxxxxxxxxx</td>
-              <td><i class="bi bi-telephone"></i> Panggil</td>
+              <td><i class="bi bi-telephone"></i> Dail</td>
               <td><i class="bi bi-whatsapp"></i> WhatsApp</td>
             </tr>
             <tr>
               <td>Hafiz (Abang)</td>
-              <td>xxxxxxxxxx</td>
-              <td><a href="tel:+60134617556"><i class="bi bi-telephone"></i> Panggil</a></td>
+              <td><a href="tel:+60134617556"><i class="bi bi-telephone"></i> Dail</a></td>
               <td><a href="https://wa.me/+60134617556"><i class="bi bi-whatsapp"></i> WhatsApp</a></td>
             </tr>
             <tr>
               <td>Faiq (Abang)</td>
-              <td>xxxxxxxxxx</td>
-              <td><i class="bi bi-telephone"></i> Panggil</td>
+              <td><i class="bi bi-telephone"></i> Dail</td>
               <td><i class="bi bi-whatsapp"></i> WhatsApp</td>
             </tr>
           </table>
@@ -385,9 +445,8 @@
           <br>
           <br>
           <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31825.88007476874!2d100.8994138!3d4.3669936!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cadf002fac081f%3A0xdf512a36c2124758!2sD&#39;INAP%20DESA%20HOMESTAY!5e0!3m2!1sen!2smy!4v1708489153740!5m2!1sen!2smy" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div
-        </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31825.88007476874!2d100.8994138!3d4.3669936!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cadf002fac081f%3A0xdf512a36c2124758!2sD&#39;INAP%20DESA%20HOMESTAY!5e0!3m2!1sen!2smy!4v1708489153740!5m2!1sen!2smy" width="100%" height="500vn" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
       </div>
     </section><!-- End Resume Section -->
   </main><!-- End #main -->
@@ -406,9 +465,13 @@
         <!-- Licensing information: [license-url] -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
         Original Design by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        <br>
+        “Waze”, the Waze logo, and other trade and/or service marks are the property of Waze or its affiliates.
+        “Google”, the Google, Google Map logo, and other trade and/or service marks are the property of Waze or its affiliates
       </div>
     </div>
   </footer><!-- End Footer -->
+</div>
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
@@ -446,6 +509,25 @@
     });
 
   </script>
+
+<script>
+function buka(){
+  const audio = document.getElementById("audioplayer");
+  const element = document.getElementById("hero");
+  audio.play();
+  document.getElementById("fullcontent").classList.remove("d-none");
+  
+  document.getElementById("cover-blur").classList.add("d-none");
+  document.getElementById("cover").classList.add("d-none");
+  element.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+  
+  //
+  
+// //you can do it by jquery. no matter
+  
+}
+
+</script>
 
   <script>
     // Set the date we're counting down to
