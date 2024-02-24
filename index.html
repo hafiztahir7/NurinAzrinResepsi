@@ -136,7 +136,7 @@
     </div>
   </div> -->
 
-<div id="fullcontent" class="d-none">
+<div id="fullcontent" class="">
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
@@ -523,6 +523,7 @@ function buka(){
   document.getElementById("cover-blur").classList.add("d-none");
   document.getElementById("cover").classList.add("d-none");
   element.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+  AOS.init();
   
   //
   
