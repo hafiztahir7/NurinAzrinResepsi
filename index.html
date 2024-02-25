@@ -95,9 +95,9 @@
       <button id="bukabutton" class="btn btn-primary;" style="background-color:#b48b58; color: white;" onClick="buka()">BUKA</button>
       <br>
       <br>
-      <p><span class="typed"
+      <!-- <p><span class="typed"
           data-typed-items="Save The Date, #NurinAzrin"></span>
-      </p>
+      </p> -->
     </div>
   </section><!-- End Hero -->
 
@@ -136,9 +136,9 @@
     </div>
   </div> -->
 
-<div id="fullcontent" class="">
+<div id="fullcontent" style="visibility: visible; height:0px; overflow: hidden;">
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center">
+  <section id="hero" class="d-flex flex-column justify-content-center;">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
       <img class="walimatulurus" src="./assets/img/walimatulurus.png" />
       <p class="walimatulurustext">WALIMATULU'RUS</p>
@@ -516,14 +516,13 @@ function buka(){
   const audio = document.getElementById("audioplayer");
   const element = document.getElementById("hero");
   audio.play();
-  document.getElementById("fullcontent").classList.remove("d-none");
-  document.getElementById("header").classList.remove("d-none");
-  document.getElementById("list").classList.remove("d-none");
+  document.getElementById("fullcontent").style.removeProperty("height");
+  document.getElementById("fullcontent").style.removeProperty("visibility");
+  document.getElementById("fullcontent").style.removeProperty("overflow");
   
   document.getElementById("cover-blur").classList.add("d-none");
   document.getElementById("cover").classList.add("d-none");
-  element.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
-  AOS.init();
+  AOS.refresh();
   
   //
   
