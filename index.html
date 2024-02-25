@@ -59,7 +59,8 @@
       <ul>
         <li><a href="#utama" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Utama</span></a></li>
         <li><a href="#jemputan" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Jemputan</span></a></li>
-        <li><a href="#aturcara" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Aturcara Majlis</span></a>
+        <li><a href="#aturcara" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Aturcara
+              Majlis</span></a>
         </li>
         <li><a href="#savethedate" class="nav-link scrollto"><i class="bi bi-calendar-heart"></i> <span>Save The
               Date</span></a></li>
@@ -109,7 +110,7 @@
     <!-- ======= Utama Section ======= -->
     <section id="utama" class="d-flex flex-column justify-content-center">
       <div class="container">
-        <img class="walimatulurus" src="./assets/img/walimatulurus.png" data-aos="fade-up" data-aos-delay="100"/>
+        <img class="walimatulurus" src="./assets/img/walimatulurus.png" data-aos="fade-up" data-aos-delay="100" />
         <p class="walimatulurustext" data-aos="fade-up" data-aos-delay="100">WALIMATUL'URUS</p>
         <br>
         <br>
@@ -393,7 +394,7 @@
                     e.preventDefault();
                     const data = new FormData(form);
                     var timestamp = new Date().toLocaleString();
-                    data.append("tarikhrekod",timestamp);
+                    data.append("tarikhrekod", timestamp);
                     const action = e.target.action;
                     fetch(action, {
                       method: 'POST',
@@ -408,6 +409,12 @@
                   });
                 });
               </script>
+              <br>
+              <div>
+                <h3>Guests Book</h3>
+                <div id="guestbook" style="height: 20vh; overflow: scroll;"></div>
+              </div>
+
 
             </div>
           </div>
@@ -468,8 +475,10 @@
           “Google”, the Google, Google Map logo, and other trade and/or service marks are the property of Google or its
           affiliates.
           <br>
-          The copyright of the music "Anuar Zain - Sedetik Lebih Saxophone Cover by Syed Syamer" are the property of original performer or its
-          affiliates. The material is used , which falls under the fair use doctrine of copyright law. No copyright infringement is intended.
+          The copyright of the music "Anuar Zain - Sedetik Lebih Saxophone Cover by Syed Syamer" are the property of
+          original performer or its
+          affiliates. The material is used , which falls under the fair use doctrine of copyright law. No copyright
+          infringement is intended.
         </div>
       </div>
     </footer>
@@ -516,7 +525,7 @@
 
   <!-- Invitation Open Javascript Section -->
   <script>
-    function buka() {
+    async function buka() {
       const audio = document.getElementById("audioplayer");
       const element = document.getElementById("utama");
       audio.play();
@@ -528,6 +537,14 @@
       document.getElementById("cover-blur").classList.add("d-none");
       document.getElementById("cover").classList.add("d-none");
       AOS.refresh();
+
+      // Get RSVP list
+      const response = await fetch("https://script.google.com/macros/s/AKfycbxzYOSSsXSy7-oPcvX_CmJ_if-d2jN1utIiCAJCnO09lSz-9YErhQs4gC6CJq5l_EhV_Q/exec");
+      const events = await response.json();
+
+      for (let i = 0; i < events.length; i++) {
+        document.getElementById("guestbook").innerHTML += "<p><b>" + events[i].ucapan + "</b><br>" + events[i].nama + "</p><br>";
+      }
 
     }
 
@@ -562,9 +579,16 @@
       // If the count down is over, write some text 
       if (distance < 0) {
         clearInterval(x);
-        document.getElementById("demo").innerHTML = "EXPIRED";
+      document.getElementById("hari").innerHTML = "00";
+      document.getElementById("jam").innerHTML = "00";
+      document.getElementById("minit").innerHTML = "00";
+      document.getElementById("saat").innerHTML = "00";
       }
     }, 1000);
+  </script>
+
+  <script>
+
   </script>
 
 </body>
