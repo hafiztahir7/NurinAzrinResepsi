@@ -280,6 +280,19 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# TweenMax Petals Section
+--------------------------------------------------------------*/
+.dot {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  background: url("../img/rose.png") no-repeat;
+  background-size: 50% 50%;
+  opacity: 0.2;
+  
+}
+
+/*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
@@ -288,16 +301,6 @@ h6 {
   background: url("../img/bg.png") top center no-repeat;
   background-size: cover;
   position: relative;
-}
-
-.dot {
-  width: 35px;
-  height: 35px;
-  position: absolute;
-  background: url(https://image.ibb.co/kyUHab/rose.png) no-repeat;
-  background-size: 50% 50%;
-  opacity: 0.2;
-  
 }
 
 @media (min-width: 992px) {
@@ -452,7 +455,7 @@ font-family: "Cormorant", sans-serif;
 }
 
 /*--------------------------------------------------------------
-# cover Section
+# Cover Section
 --------------------------------------------------------------*/
 #cover {
   width: 100%;

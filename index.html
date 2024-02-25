@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
 
   <!-- Google Fonts -->
   <link
@@ -32,6 +32,9 @@
   <!-- FontAwesome -->
   <script src="https://kit.fontawesome.com/3fc564fed0.js" crossorigin="anonymous"></script>
 
+  <!-- TweenMax Petal Animation-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+
   <!-- =======================================================
   * Template Name: MyResume
   * Updated: Jan 29 2024 with Bootstrap v5.3.2
@@ -39,16 +42,13 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-  
-  <!-- TweenMax -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
 
 </head>
 
 <body>
-  <!-- background music section -->
+  <!-- Background music audio section -->
   <audio id="audioplayer" src="./assets/audio/bg-music.mp3" loop></audio>
-  <!-- background music section -->
+
   <!-- ======= Mobile nav toggle button ======= -->
   <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
   <i id="list" class="bi bi-list mobile-nav-toggle d-lg-none d-none"></i>
@@ -57,7 +57,7 @@
 
     <nav id="navbar" class="navbar nav-menu">
       <ul>
-        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Utama</span></a></li>
+        <li><a href="#utama" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Utama</span></a></li>
         <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Jemputan</span></a></li>
         <li><a href="#facts" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Aturcara Majlis</span></a>
         </li>
@@ -70,18 +70,19 @@
         <li><a href="#resume" class="nav-link scrollto"><i class="bi bi-map"></i> <span>Panduan Navigasi</span></a>
         </li>
       </ul>
-    </nav><!-- .nav-menu -->
+    </nav>
+    <!-- .nav-menu -->
+  </header>
+  <!-- End Header -->
 
-  </header><!-- End Header -->
 
-
-  <!-- ======= Hero Section ======= -->
-  <section id="cover-blur" class="d-flex flex-column justify-content-center" style="filter: blur(1.5px);-webkit-filter: blur(1.5px); position: absolute;" >
+  <!-- ======= Cover Section ======= -->
+  <section id="cover-blur" class="d-flex flex-column justify-content-center"
+    style="filter: blur(1.5px);-webkit-filter: blur(1.5px); position: absolute;">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
     </div>
-  </section><!-- End Hero -->
+  </section>
 
-  <!-- ======= Hero Section ======= -->
   <section id="cover" class="d-flex flex-column justify-content-center">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
       <img class="walimatulurus" src="./assets/img/walimatulurus.png" />
@@ -96,383 +97,383 @@
       </h1>
       <br>
       <br>
-      <button id="bukabutton" class="btn btn-primary;" style="background-color:#b48b58; color: white;" onClick="buka()">BUKA</button>
+      <button id="bukabutton" class="btn btn-primary;" style="background-color:#b48b58; color: white;"
+        onClick="buka()">BUKA</button>
       <br>
       <br>
-      <!-- <p><span class="typed"
-          data-typed-items="Save The Date, #NurinAzrin"></span>
-      </p> -->
     </div>
-  </section><!-- End Hero -->
+  </section>
+  <!-- End Cover -->
 
-<div id="fullcontent" style="visibility: hidden; height:0px; overflow: hidden;">
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <img class="walimatulurus" src="./assets/img/walimatulurus.png" />
-      <p class="walimatulurustext">WALIMATUL'URUS</p>
-      <br>
-      <br>
-      <h1>Nurin
+  <div id="fullcontent" style="visibility: hidden; height:0px; overflow: hidden;">
+    <!-- ======= Utama Section ======= -->
+    <section id="utama" class="d-flex flex-column justify-content-center">
+      <div class="container" data-aos="zoom-in" data-aos-delay="100">
+        <img class="walimatulurus" src="./assets/img/walimatulurus.png" />
+        <p class="walimatulurustext">WALIMATUL'URUS</p>
         <br>
-        &
         <br>
-        Azrin
-      </h1>
-      <br>
-      <br>
-      <button id="audiobutton" class="btn btn-sm btn-primary;" style="background-color:#b48b58; color: white;"><i
-          id="audiobuttoncontent" class="bi-volume-mute"></i> Music</button>
-      <br>
-      <br>
-      <table>
-        <tr>
-          <td colspan="3">APRIL</td>
-        </tr>
-        <tr>
-          <td style="border-top: 1px solid;border-bottom: 1px solid ; width:40%;border-color: #b48b58;">SABTU</td>
-          <td style="width:20%; vertical-align: center;">13</td>
-          <td style="border-top: 1px solid;border-bottom: 1px solid;width:40%;border-color: #b48b58;">11:00 Pagi</td>
-        </tr>
-        <tr>
-          <td colspan="3">2024</td>
-        </tr>
-      </table>
-      <p>D'INAP DESA SERI ISKANDAR</p>
-      <p><span class="typed"
-          data-typed-items="Save The Date, 13 April 2024, 4 Syawal 1445H, 11.00 Pagi, D'Inap Desa Seri Iskandar, #NurinAzrin, #AzriNurin"></span>
-      </p>
-      <p>#NurinAzrin</p>
-    </div>
-  </section><!-- End Hero -->
+        <h1>Nurin
+          <br>
+          &
+          <br>
+          Azrin
+        </h1>
+        <br>
+        <br>
+        <button id="audiobutton" class="btn btn-sm btn-primary;" style="background-color:#b48b58; color: white;"><i
+            id="audiobuttoncontent" class="bi-volume-mute"></i> Music</button>
+        <br>
+        <br>
+        <table>
+          <tr>
+            <td colspan="3">APRIL</td>
+          </tr>
+          <tr>
+            <td style="border-top: 1px solid;border-bottom: 1px solid ; width:40%;border-color: #b48b58;">SABTU</td>
+            <td style="width:20%; vertical-align: center;">13</td>
+            <td style="border-top: 1px solid;border-bottom: 1px solid;width:40%;border-color: #b48b58;">11:00 Pagi</td>
+          </tr>
+          <tr>
+            <td colspan="3">2024</td>
+          </tr>
+        </table>
+        <p>D'INAP DESA SERI ISKANDAR</p>
+        <p><span class="typed"
+            data-typed-items="Save The Date, 13 April 2024, 4 Syawal 1445H, 11.00 Pagi, D'Inap Desa Seri Iskandar, #NurinAzrin, #AzriNurin"></span>
+        </p>
+        <p>#NurinAzrin</p>
+      </div>
+    </section>
+    <!-- End Utama -->
 
+    <!-- Immediate JavaScript for TweenMax Amination -->
+    <script>
+      /*
+      a Pen by DIACO : twitter.com/Diaco_ml  ||  codepen.io/MAW
+      powered by GSAP : https://www.greensock.com/
+      */
 
-  <script>
-    /*
-a Pen by DIACO : twitter.com/Diaco_ml  ||  codepen.io/MAW
-powered by GSAP : https://www.greensock.com/
-*/
-    TweenLite.set("#hero", { perspective: 600 })
-    // TweenLite.set("img", { xPercent: "-50%", yPercent: "-50%" })
+      TweenLite.set("#utama", { perspective: 600 })
 
-    var total = 30;
-    var warp = document.getElementById("hero"), w = window.innerWidth, h = window.innerHeight;
+      var total = 30;
+      var warp = document.getElementById("utama"), w = window.innerWidth, h = window.innerHeight;
 
-    for (i = 0; i < total; i++) {
+      for (i = 0; i < total; i++) {
         var Div = document.createElement('div');
         TweenLite.set(Div, { attr: { class: 'dot' }, x: R(0, w), y: R(-200, -150), z: R(-200, 200) });
         warp.appendChild(Div);
         animm(Div);
-    }
+      }
 
-    function animm(elm) {
+      function animm(elm) {
         TweenMax.to(elm, R(6, 15), { y: h + 100, ease: Linear.easeNone, repeat: -1, delay: -15 });
         TweenMax.to(elm, R(4, 8), { x: '+=100', rotationZ: R(0, 180), repeat: -1, yoyo: true, ease: Sine.easeInOut });
         TweenMax.to(elm, R(2, 8), { rotationX: R(0, 360), rotationY: R(0, 360), repeat: -1, yoyo: true, ease: Sine.easeInOut, delay: -5 });
-    };
+      };
 
-    function R(min, max) { return min + Math.random() * (max - min) };
+      function R(min, max) { return min + Math.random() * (max - min) };
+    </script>
 
-
-    // a Pen by DIACO : twitter.com/Diaco_ml  ||  codepen.io/MAW
-</script>
-
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <!-- <h2>About</h2> -->
-          <p>
-            Sekapur sirih seulas pinang
-            <br>
-            <br>
-            <b>ABDUL TAHIR BIN HUSSEIN</b>
-            <br>
-            &
-            <br>
-            <b>HAMIDAH BINTI ADI</b>
-            <br>
-            <br>
-            dengan undangan seribu kenangan, mengalu-alukan kunjungan
-            <br>
-            <br>
-            Tuan/Puan/Encik/Cik
-            <br>
-            suami/isteri ke Majlis Resepsi Puteri Kami<br>
-            <br>
-            <b>NURIN SYAFIQAH BINTI ABDUL TAHIR</b>
-            <br>
-            dengan pasangan hatinya
-            <br>
-            <b>MUHAMAD AZRIN BIN MOHAMAD YAMIN</b>
-            <br>
-            <br>
-            Pada
-            <br>
-            <b>Sabtu, 13hb April 2024M</b><br>
-            bersamaan
-            <br>
-            <b>4hb Syawal 1445H</b>
-            <br>
-            bertempat di<br>
-            <b>D'INAP DESA HOMESTAY, DESA SERI ISKANDAR</b>
-            <br>
-            <i>klik <a href="#resume">disini</a> untuk bantuan navigasi ke lokasi</i>
-            <br>
-            <br>
-            Semoga dengan kehadiran tuan/puan akan menyerikan lagi majlis kami
-            dan diucapkan ribuan terima kasih.
-            <br>
-            <br>
-            <i>Untuk kami memberikan layanan yang terbaik kepada jemputan,
-              diharapkan tuan/puan boleh membuat pengesahan
-              kehadiran (RSVP) dengan menekan butang dibawah</i>
-            <br>
-            <a href="#contact" class="btn btn-sm btn-primary;"
-              style="background-color:#b48b58; border-color: #b48b58; color: white; border-radius: 40px;">Sahkan
-              Kehadiran</a>
-          </p>
+    <main id="main">
+      <!-- ======= Jemputan Section ======= -->
+      <section id="jemputan" class="about">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <p>
+              Sekapur sirih seulas pinang
+              <br>
+              <br>
+              <b>ABDUL TAHIR BIN HUSSEIN</b>
+              <br>
+              &
+              <br>
+              <b>HAMIDAH BINTI ADI</b>
+              <br>
+              <br>
+              dengan undangan seribu kenangan, mengalu-alukan kunjungan
+              <br>
+              <br>
+              Tuan/Puan/Encik/Cik
+              <br>
+              suami/isteri ke Majlis Resepsi Puteri Kami<br>
+              <br>
+              <b>NURIN SYAFIQAH BINTI ABDUL TAHIR</b>
+              <br>
+              dengan pasangan hatinya
+              <br>
+              <b>MUHAMAD AZRIN BIN MOHAMAD YAMIN</b>
+              <br>
+              <br>
+              Pada
+              <br>
+              <b>Sabtu, 13hb April 2024M</b><br>
+              bersamaan
+              <br>
+              <b>4hb Syawal 1445H</b>
+              <br>
+              bertempat di<br>
+              <b>D'INAP DESA HOMESTAY, DESA SERI ISKANDAR</b>
+              <br>
+              <i>klik <a href="#resume">disini</a> untuk bantuan navigasi ke lokasi</i>
+              <br>
+              <br>
+              Semoga dengan kehadiran tuan/puan akan menyerikan lagi majlis kami
+              dan diucapkan ribuan terima kasih.
+              <br>
+              <br>
+              <i>Untuk kami memberikan layanan yang terbaik kepada jemputan,
+                diharapkan tuan/puan boleh membuat pengesahan
+                kehadiran (RSVP) dengan menekan butang dibawah</i>
+              <br>
+              <a href="#contact" class="btn btn-sm btn-primary;"
+                style="background-color:#b48b58; border-color: #b48b58; color: white; border-radius: 40px;">Sahkan
+                Kehadiran</a>
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
-    <!-- End About Section -->
+      </section>
+      <!-- End Jemputan Section -->
 
-    <!-- ======= Facts Section ======= -->
-    <section id="facts" class="facts">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Aturcara Majlis</h2>
-          <p>Jamuan Makan : 11:00 Pagi - 4:00 Petang
-            <br>
-            Ketibaan Pengantin : 12:00 Tengah Hari
-          </p>
+      <!-- ======= Aturcara Section ======= -->
+      <section id="aturcara" class="facts">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Aturcara Majlis</h2>
+            <p>Jamuan Makan : 11:00 Pagi - 4:00 Petang
+              <br>
+              Ketibaan Pengantin : 12:00 Tengah Hari
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
-    <!-- End Facts Section -->
+      </section>
+      <!-- End Aturcara Section -->
 
-    <!-- ======= Save The Date Section ======= -->
-    <section id="savethedate" class="facts">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Save The Date</h2>
-          <h3>13 APRIL 2024</h3>
-          <table>
-            <tr>
-              <td>
-                <h4>Hari</h4>
-              </td>
-              <td>
-                <h4>Jam</h4>
-              </td>
-              <td>
-                <h4>Minit</h4>
-              </td>
-              <td>
-                <h4>Saat</h4>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p id="hari" class="countdown"></p>
-              </td>
-              <td>
-                <p id="jam" class="countdown"></p>
-              </td>
-              <td>
-                <p id="minit" class="countdown"></p>
-              </td>
-              <td>
-                <p id="saat" class="countdown"></p>
-              </td>
-            </tr>
-          </table>
-          <br>
-          <a href="./assets/ics/nurin_azrin_reception.ics" class="btn btn-primary"
-            style="background-color:#b48b58; border-color: #b48b58; color: white; border-radius: 40px;"><i
-              class="bi bi-calendar-date"></i> Muat turun entri kalender (.ics)</a>
-        </div>
-      </div>
-    </section>
-    <!-- End Save The Date Section -->
-
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Hubungi Kami</h2>
-          <p>
-          <table>
-            <tr>
-              <td>Abdul Tahir (Bapa)</td>
-              <td><i class="bi bi-telephone"></i> Dail</td>
-              <td><i class="bi bi-whatsapp"></i> WhatsApp</td>
-            </tr>
-            <tr>
-              <td>Hamidah (Ibu)</td>
-              <td><i class="bi bi-telephone"></i> Dail</td>
-              <td><i class="bi bi-whatsapp"></i> WhatsApp</td>
-            </tr>
-            <tr>
-              <td>Nurin</td>
-              <td><i class="bi bi-telephone"></i> Dail</td>
-              <td><i class="bi bi-whatsapp"></i> WhatsApp</td>
-            </tr>
-            <tr>
-              <td>Faiz (Kakak)</td>
-              <td><i class="bi bi-telephone"></i> Dail</td>
-              <td><i class="bi bi-whatsapp"></i> WhatsApp</td>
-            </tr>
-            <tr>
-              <td>Aqilah (Kakak)</td>
-              <td><i class="bi bi-telephone"></i> Dail</td>
-              <td><i class="bi bi-whatsapp"></i> WhatsApp</td>
-            </tr>
-            <tr>
-              <td>Hafiz (Abang)</td>
-              <td><a href="tel:+60134617556"><i class="bi bi-telephone"></i> Dail</a></td>
-              <td><a href="https://wa.me/+60134617556"><i class="bi bi-whatsapp"></i> WhatsApp</a></td>
-            </tr>
-            <tr>
-              <td>Faiq (Abang)</td>
-              <td><i class="bi bi-telephone"></i> Dail</td>
-              <td><i class="bi bi-whatsapp"></i> WhatsApp</td>
-            </tr>
-          </table>
-          </p>
-        </div>
-      </div>
-    </section><!-- End Skills Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Pengesahan Kehadiran (RSVP)</h2>
-          <p>Jemputan yang dihargai, bagi kami memberikan layanan yang terbaik semasa majlis berlangsung, diharapkan
-            pihak tuan/puan dapat mengesahkan kehadiran dengan mengisi ruangan dibawah.
+      <!-- ======= Save The Date Section ======= -->
+      <section id="savethedate" class="facts">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Save The Date</h2>
+            <h3>13 APRIL 2024</h3>
+            <table>
+              <tr>
+                <td>
+                  <h4>Hari</h4>
+                </td>
+                <td>
+                  <h4>Jam</h4>
+                </td>
+                <td>
+                  <h4>Minit</h4>
+                </td>
+                <td>
+                  <h4>Saat</h4>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p id="hari" class="countdown"></p>
+                </td>
+                <td>
+                  <p id="jam" class="countdown"></p>
+                </td>
+                <td>
+                  <p id="minit" class="countdown"></p>
+                </td>
+                <td>
+                  <p id="saat" class="countdown"></p>
+                </td>
+              </tr>
+            </table>
             <br>
-            Terima Kasih.
-            <br>
-            -Keluarga-
-          </p>
-          <br>
-          <div class="col-12">
+            <a href="./assets/ics/nurin_azrin_reception.ics" class="btn btn-primary"
+              style="background-color:#b48b58; border-color: #b48b58; color: white; border-radius: 40px;"><i
+                class="bi bi-calendar-date"></i> Muat turun entri kalender (.ics)</a>
+          </div>
+        </div>
+      </section>
+      <!-- End Save The Date Section -->
 
-            <form id="rsvpform"
-              action="https://script.google.com/macros/s/AKfycbyizyF9ZeircQSK147ziT2JqqzEdXphqx46ws1ten0Rh7tM9kZxAcwZVqRv1maiQj1kGQ/exec"
-              method="post">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="nama" class="form-control" id="Nama" placeholder="Nama" required>
+      <!-- ======= Hubungi Section ======= -->
+      <section id="hubingi" class="skills section-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Hubungi Kami</h2>
+            <p>
+            <table>
+              <tr>
+                <td>Abdul Tahir (Bapa)</td>
+                <td><i class="bi bi-telephone"></i> Dail</td>
+                <td><i class="bi bi-whatsapp"></i> WhatsApp</td>
+              </tr>
+              <tr>
+                <td>Hamidah (Ibu)</td>
+                <td><i class="bi bi-telephone"></i> Dail</td>
+                <td><i class="bi bi-whatsapp"></i> WhatsApp</td>
+              </tr>
+              <tr>
+                <td>Nurin</td>
+                <td><i class="bi bi-telephone"></i> Dail</td>
+                <td><i class="bi bi-whatsapp"></i> WhatsApp</td>
+              </tr>
+              <tr>
+                <td>Faiz (Kakak)</td>
+                <td><i class="bi bi-telephone"></i> Dail</td>
+                <td><i class="bi bi-whatsapp"></i> WhatsApp</td>
+              </tr>
+              <tr>
+                <td>Aqilah (Kakak)</td>
+                <td><i class="bi bi-telephone"></i> Dail</td>
+                <td><i class="bi bi-whatsapp"></i> WhatsApp</td>
+              </tr>
+              <tr>
+                <td>Hafiz (Abang)</td>
+                <td><a href="tel:+60134617556"><i class="bi bi-telephone"></i> Dail</a></td>
+                <td><a href="https://wa.me/+60134617556"><i class="bi bi-whatsapp"></i> WhatsApp</a></td>
+              </tr>
+              <tr>
+                <td>Faiq (Abang)</td>
+                <td><i class="bi bi-telephone"></i> Dail</td>
+                <td><i class="bi bi-whatsapp"></i> WhatsApp</td>
+              </tr>
+            </table>
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- End Hubungi Section -->
+
+      <!-- ======= RSVP Section ======= -->
+      <section id="rsvp" class="contact">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Pengesahan Kehadiran (RSVP)</h2>
+            <p>Jemputan yang dihargai, bagi kami memberikan layanan yang terbaik semasa majlis berlangsung, diharapkan
+              pihak tuan/puan dapat mengesahkan kehadiran dengan mengisi ruangan dibawah.
+              <br>
+              Terima Kasih.
+              <br>
+              -Keluarga-
+            </p>
+            <br>
+            <div class="col-12">
+
+              <form id="rsvpform"
+                action="https://script.google.com/macros/s/AKfycbyizyF9ZeircQSK147ziT2JqqzEdXphqx46ws1ten0Rh7tM9kZxAcwZVqRv1maiQj1kGQ/exec"
+                method="post">
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input type="text" name="nama" class="form-control" id="Nama" placeholder="Nama" required>
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input type="number" class="form-control" name="bilangan" id="Bilangan"
+                      placeholder="Bilangan Kehadiran" required>
+                  </div>
                 </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="number" class="form-control" name="bilangan" id="Bilangan" placeholder="Bilangan"
-                    required>
+                <div class="form-group mt-3">
+                  <textarea class="form-control" name="ucapan" rows="5" placeholder="Ucapan" required></textarea>
                 </div>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="ucapan" rows="5" placeholder="Ucapan" required></textarea>
-              </div>
-              <div class="my-3">
-                <div id="loading" class="loading" style="display:none">Loading...</div>
-                <div id="success" class="sent-message" style="display:none">Pengesahan kehadiran anda telah berjaya
-                  direkodkan. Terima Kasih!</div>
-              </div>
-              <div class="text-center">
-                <button id="rsvpbutton" class="btn btn-primary"
-                  style="background-color:#b48b58; border-color: #b48b58; color: white; border-radius: 40px;"
-                  type="submit">Sahkan Kehadiran</button>
-              </div>
-            </form>
+                <div class="my-3">
+                  <div id="loading" class="loading" style="display:none">Loading...</div>
+                  <div id="success" class="sent-message" style="display:none">Pengesahan kehadiran anda telah berjaya
+                    direkodkan. Terima Kasih!</div>
+                </div>
+                <div class="text-center">
+                  <button id="rsvpbutton" class="btn btn-primary"
+                    style="background-color:#b48b58; border-color: #b48b58; color: white; border-radius: 40px;"
+                    type="submit">Sahkan Kehadiran</button>
+                </div>
+              </form>
 
-            <script>
-              window.addEventListener("load", function () {
-                const form = document.getElementById('rsvpform');
-                form.addEventListener("submit", function (e) {
-                  document.getElementById('loading').style.display = "inline";
-                  document.getElementById('rsvpbutton').disabled = true;
-                  document.getElementById('rsvpbutton').innerHTML = "Menghantar Pengesahan...";
-                  e.preventDefault();
-                  const data = new FormData(form);
-                  const action = e.target.action;
-                  fetch(action, {
-                    method: 'POST',
-                    body: data,
-                  })
-                    .then(() => {
-                      document.getElementById('success').style.display = "inline";
-                      document.getElementById('loading').style.display = "none";
-                      document.getElementById('rsvpbutton').disabled = false;
-                      document.getElementById('rsvpbutton').innerHTML = "Sahkan Kehadiran";
+              <!-- Intermedite JavaScript for posting rsvp-->
+              <script>
+                window.addEventListener("load", function () {
+                  const form = document.getElementById('rsvpform');
+                  form.addEventListener("submit", function (e) {
+                    document.getElementById('success').style.display = "none";
+                    document.getElementById('loading').style.display = "inline";
+                    document.getElementById('rsvpbutton').disabled = true;
+                    document.getElementById('rsvpbutton').innerHTML = "Menghantar Pengesahan...";
+                    e.preventDefault();
+                    const data = new FormData(form);
+                    const action = e.target.action;
+                    fetch(action, {
+                      method: 'POST',
+                      body: data,
                     })
+                      .then(() => {
+                        document.getElementById('success').style.display = "inline";
+                        document.getElementById('loading').style.display = "none";
+                        document.getElementById('rsvpbutton').disabled = false;
+                        document.getElementById('rsvpbutton').innerHTML = "Sahkan Kehadiran";
+                      })
+                  });
                 });
-              });
+              </script>
 
-            </script>
+            </div>
           </div>
         </div>
+      </section>
+      <!-- End RSVP Section -->
 
+      <!-- ======= Navigasi Section ======= -->
+      <section id="navigasi" class="resume">
+        <div class="container" data-aos="fade-up">
 
-
-      </div>
-    </section><!-- End Contact Section -->
-
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Panduan Navigasi</h2>
-          <p>Bagi memudahkan jemputan untuk hadir ke majlis, tuan/puan boleh menggunakan bantuan navigasi bagi
-            mengetahui lokasi majlis resepsi melalui <i>"dropped pin"</i> di aplikasi navigasi Google Map dan Waze.</p>
-          <br>
-          <a href="https://maps.app.goo.gl/w5Z74sM8iS7u2fuq5" class="btn btn-primary"
-            style="background-color:#b48b58; border-color: #b48b58; color: white; border-radius: 40px;"><i
-              class="bi bi-geo-alt"></i> Google Map</a>
-          <br>
-          <br>
-          <a href="https://ul.waze.com/ul?ll=4.36704740%2C100.93747437&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location"
-            class="btn btn-primary"
-            style="background-color:#b48b58; border-color: #b48b58; color: white; border-radius: 40px;"><i
-              class="fa-brands fa-waze"></i> Waze</a>
-          <br>
-          <br>
-          <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31825.88007476874!2d100.8994138!3d4.3669936!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cadf002fac081f%3A0xdf512a36c2124758!2sD&#39;INAP%20DESA%20HOMESTAY!5e0!3m2!1sen!2smy!4v1708489153740!5m2!1sen!2smy" width="100%" height="500vn" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="section-title">
+            <h2>Panduan Navigasi</h2>
+            <p>Bagi memudahkan jemputan untuk hadir ke majlis, tuan/puan boleh menggunakan bantuan navigasi bagi
+              mengetahui lokasi majlis resepsi melalui <i>"dropped pin"</i> di aplikasi navigasi Google Map dan Waze.
+            </p>
+            <br>
+            <a href="https://maps.app.goo.gl/w5Z74sM8iS7u2fuq5" class="btn btn-primary"
+              style="background-color:#b48b58; border-color: #b48b58; color: white; border-radius: 40px;"><i
+                class="bi bi-geo-alt"></i> Google Map</a>
+            <br>
+            <br>
+            <a href="https://ul.waze.com/ul?ll=4.36704740%2C100.93747437&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location"
+              class="btn btn-primary"
+              style="background-color:#b48b58; border-color: #b48b58; color: white; border-radius: 40px;"><i
+                class="fa-brands fa-waze"></i> Waze</a>
+            <br>
+            <br>
+            <div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31825.88007476874!2d100.8994138!3d4.3669936!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cadf002fac081f%3A0xdf512a36c2124758!2sD&#39;INAP%20DESA%20HOMESTAY!5e0!3m2!1sen!2smy!4v1708489153740!5m2!1sen!2smy"
+                width="100%" height="500vn" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
           </div>
-      </div>
-    </section><!-- End Resume Section -->
-  </main><!-- End #main -->
+      </section>
+      <!-- End Navigasi Section -->
+    </main>
+    <!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>BootstrapMade</span></strong>. All Rights Reserved.
-        <br>
-        Customize by BitBit (Muhammad Zulhafiz Abdul Tahir)
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>BootstrapMade</span></strong>. All Rights Reserved.
+          <br>
+          Customize by BitBit (Muhammad Zulhafiz Abdul Tahir)
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: [license-url] -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
+          Original Design by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          <br>
+          “Waze”, the Waze logo, and other trade and/or service marks are the property of Waze or its affiliates.
+          <br>
+          “Google”, the Google, Google Map logo, and other trade and/or service marks are the property of Google or its
+          affiliates
+        </div>
       </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: [license-url] -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
-        Original Design by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-        <br>
-        “Waze”, the Waze logo, and other trade and/or service marks are the property of Waze or its affiliates.
-        <br>
-        “Google”, the Google, Google Map logo, and other trade and/or service marks are the property of Google or its affiliates
-      </div>
-    </div>
-  </footer><!-- End Footer -->
-</div>
+    </footer>
+    <!-- End Footer -->
+  </div>
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
@@ -492,6 +493,7 @@ powered by GSAP : https://www.greensock.com/
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <!-- Audio Playback Javascript Section -->
   <script>
     const button = document.getElementById("audiobutton");
     const icon = document.getElementById("audiobuttoncontent");
@@ -511,24 +513,26 @@ powered by GSAP : https://www.greensock.com/
 
   </script>
 
-<script>
-function buka(){
-  const audio = document.getElementById("audioplayer");
-  const element = document.getElementById("hero");
-  audio.play();
-  document.getElementById("fullcontent").style.removeProperty("height");
-  document.getElementById("fullcontent").style.removeProperty("visibility");
-  document.getElementById("fullcontent").style.removeProperty("overflow");
-  document.getElementById("header").classList.remove("d-none");
-  document.getElementById("list").classList.remove("d-none");
-  document.getElementById("cover-blur").classList.add("d-none");
-  document.getElementById("cover").classList.add("d-none");
-  AOS.refresh();
-  
-}
+  <!-- Invitation Open Javascript Section -->
+  <script>
+    function buka() {
+      const audio = document.getElementById("audioplayer");
+      const element = document.getElementById("utama");
+      audio.play();
+      document.getElementById("fullcontent").style.removeProperty("height");
+      document.getElementById("fullcontent").style.removeProperty("visibility");
+      document.getElementById("fullcontent").style.removeProperty("overflow");
+      document.getElementById("header").classList.remove("d-none");
+      document.getElementById("list").classList.remove("d-none");
+      document.getElementById("cover-blur").classList.add("d-none");
+      document.getElementById("cover").classList.add("d-none");
+      AOS.refresh();
 
-</script>
+    }
 
+  </script>
+
+  <!-- Countdown Javascript Section -->
   <script>
     // Set the date we're counting down to
     var countDownDate = new Date("Apr 13, 2024 11:00:00").getTime();
@@ -561,6 +565,7 @@ function buka(){
       }
     }, 1000);
   </script>
+
 </body>
 
 </html>
