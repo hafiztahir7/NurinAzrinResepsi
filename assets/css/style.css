@@ -297,7 +297,6 @@ h6 {
 
   #hero .walimatulurus {
     width: 30%;
-    letter-spacing:10px;
   }
 
   #hero .walimatulurustext {
@@ -408,6 +407,11 @@ font-family: "Cormorant", sans-serif;
     width: 50%;
   }
 
+  #hero .walimatulurustext {
+    letter-spacing:5px;
+    font-size: 4vw;
+  }
+
   #hero table{
     width:80%;
     margin-left: auto;
@@ -459,7 +463,8 @@ font-family: "Cormorant", sans-serif;
   }
 
   #cover .walimatulurustext {
-    letter-spacing:10px;
+    letter-spacing:5px;
+    font-size: 2vw;
   }
 
   .section-title p {
@@ -564,6 +569,11 @@ font-family: "Cormorant", sans-serif;
 
   #cover .walimatulurus {
     width: 50%;
+  }
+
+  #cover .walimatulurustext {
+    letter-spacing:5px;
+    font-size: 4vw;
   }
 
   #cover table{

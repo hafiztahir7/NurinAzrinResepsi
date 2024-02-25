@@ -82,7 +82,7 @@
   <section id="cover" class="d-flex flex-column justify-content-center">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
       <img class="walimatulurus" src="./assets/img/walimatulurus.png" />
-      <p class="walimatulurustext">WALIMATULU'RUS</p>
+      <p class="walimatulurustext">WALIMATUL'URUS</p>
       <br>
       <br>
       <h1>Nurin
@@ -520,14 +520,11 @@ function buka(){
   document.getElementById("fullcontent").style.removeProperty("height");
   document.getElementById("fullcontent").style.removeProperty("visibility");
   document.getElementById("fullcontent").style.removeProperty("overflow");
-  
+  document.getElementById("header").classList.remove("d-none");
+  document.getElementById("list").classList.remove("d-none");
   document.getElementById("cover-blur").classList.add("d-none");
   document.getElementById("cover").classList.add("d-none");
   AOS.refresh();
-  
-  //
-  
-// //you can do it by jquery. no matter
   
 }
 
