@@ -290,6 +290,16 @@ h6 {
   position: relative;
 }
 
+.dot {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  background: url(https://image.ibb.co/kyUHab/rose.png) no-repeat;
+  background-size: 50% 50%;
+  opacity: 0.2;
+  
+}
+
 @media (min-width: 992px) {
   #hero {
     text-align: center;
