@@ -58,16 +58,16 @@
     <nav id="navbar" class="navbar nav-menu">
       <ul>
         <li><a href="#utama" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Utama</span></a></li>
-        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Jemputan</span></a></li>
-        <li><a href="#facts" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Aturcara Majlis</span></a>
+        <li><a href="#jemputan" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Jemputan</span></a></li>
+        <li><a href="#aturcara" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Aturcara Majlis</span></a>
         </li>
         <li><a href="#savethedate" class="nav-link scrollto"><i class="bi bi-calendar-heart"></i> <span>Save The
               Date</span></a></li>
-        <li><a href="#skills" class="nav-link scrollto"><i class="bi bi-telephone"></i> <span>Hubungi Kami</span></a>
+        <li><a href="#hubungi" class="nav-link scrollto"><i class="bi bi-telephone"></i> <span>Hubungi Kami</span></a>
         </li>
-        <li><a href="#contact" class="nav-link scrollto"><i class="bi bi-calendar-check"></i> <span>Pengesahan Kehadiran
+        <li><a href="#rsvp" class="nav-link scrollto"><i class="bi bi-calendar-check"></i> <span>Pengesahan Kehadiran
               (RSVP)</span></a></li>
-        <li><a href="#resume" class="nav-link scrollto"><i class="bi bi-map"></i> <span>Panduan Navigasi</span></a>
+        <li><a href="#navigasi" class="nav-link scrollto"><i class="bi bi-map"></i> <span>Panduan Navigasi</span></a>
         </li>
       </ul>
     </nav>
@@ -177,7 +177,7 @@
 
     <main id="main">
       <!-- ======= Jemputan Section ======= -->
-      <section id="jemputan" class="about">
+      <section id="jemputan" class="jemputan">
         <div class="container" data-aos="fade-up">
           <div class="section-title">
             <p>
@@ -215,7 +215,7 @@
               bertempat di<br>
               <b>D'INAP DESA HOMESTAY, DESA SERI ISKANDAR</b>
               <br>
-              <i>klik <a href="#resume">disini</a> untuk bantuan navigasi ke lokasi</i>
+              <i>klik <a href="#navigasi">disini</a> untuk bantuan navigasi ke lokasi</i>
               <br>
               <br>
               Semoga dengan kehadiran tuan/puan akan menyerikan lagi majlis kami
@@ -226,7 +226,7 @@
                 diharapkan tuan/puan boleh membuat pengesahan
                 kehadiran (RSVP) dengan menekan butang dibawah</i>
               <br>
-              <a href="#contact" class="btn btn-sm btn-primary;"
+              <a href="#rsvp" class="btn btn-sm btn-primary;"
                 style="background-color:#b48b58; border-color: #b48b58; color: white; border-radius: 40px;">Sahkan
                 Kehadiran</a>
             </p>
@@ -236,7 +236,7 @@
       <!-- End Jemputan Section -->
 
       <!-- ======= Aturcara Section ======= -->
-      <section id="aturcara" class="facts">
+      <section id="aturcara" class="aturcara">
         <div class="container" data-aos="fade-up">
           <div class="section-title">
             <h2>Aturcara Majlis</h2>
@@ -250,7 +250,7 @@
       <!-- End Aturcara Section -->
 
       <!-- ======= Save The Date Section ======= -->
-      <section id="savethedate" class="facts">
+      <section id="savethedate" class="savethedate">
         <div class="container" data-aos="fade-up">
           <div class="section-title">
             <h2>Save The Date</h2>
@@ -295,7 +295,7 @@
       <!-- End Save The Date Section -->
 
       <!-- ======= Hubungi Section ======= -->
-      <section id="hubingi" class="skills section-bg">
+      <section id="hubungi" class="hubungi section-bg">
         <div class="container" data-aos="fade-up">
           <div class="section-title">
             <h2>Hubungi Kami</h2>
@@ -344,7 +344,7 @@
       <!-- End Hubungi Section -->
 
       <!-- ======= RSVP Section ======= -->
-      <section id="rsvp" class="contact">
+      <section id="rsvp" class="rsvp">
         <div class="container" data-aos="fade-up">
           <div class="section-title">
             <h2>Pengesahan Kehadiran (RSVP)</h2>
@@ -396,6 +396,8 @@
                     document.getElementById('rsvpbutton').innerHTML = "Menghantar Pengesahan...";
                     e.preventDefault();
                     const data = new FormData(form);
+                    var timestamp = new Date().toLocaleString();
+                    data.append("tarikhrekod",timestamp);
                     const action = e.target.action;
                     fetch(action, {
                       method: 'POST',
@@ -418,7 +420,7 @@
       <!-- End RSVP Section -->
 
       <!-- ======= Navigasi Section ======= -->
-      <section id="navigasi" class="resume">
+      <section id="navigasi" class="navigasi">
         <div class="container" data-aos="fade-up">
 
           <div class="section-title">
