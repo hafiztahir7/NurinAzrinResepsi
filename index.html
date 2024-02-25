@@ -202,26 +202,26 @@
               <b>MUHAMAD AZRIN BIN MOHAMAD YAMIN</b>
               <br>
               <br>
-              Pada
+              Tarikh
               <br>
-              <b>Sabtu, 13hb April 2024M</b><br>
-              bersamaan
+              <b>Sabtu, 13hb April 2024M
+                <br>
+                4hb Syawal 1445H</b>
               <br>
-              <b>4hb Syawal 1445H</b>
               <br>
-              bertempat di<br>
+              Tempat
+              <br>
               <b>D'INAP DESA HOMESTAY, DESA SERI ISKANDAR</b>
               <br>
-              <i>klik <a href="#navigasi">disini</a> untuk bantuan navigasi ke lokasi</i>
+              <i>klik <a href="#navigasi"><b>disini</b></a> untuk bantuan navigasi ke lokasi</i>
               <br>
               <br>
               Semoga dengan kehadiran tuan/puan akan menyerikan lagi majlis kami
               dan diucapkan ribuan terima kasih.
               <br>
               <br>
-              <i>Untuk kami memberikan layanan yang terbaik kepada jemputan,
-                diharapkan tuan/puan boleh membuat pengesahan
-                kehadiran (RSVP) dengan menekan butang dibawah</i>
+              <i>Bagi kami memberikan layanan yang terbaik semasa majlis berlangsung, diharapkan
+                pihak tuan/puan dapat mengesahkan kehadiran (RSVP) dengan menekan butang dibawah</i>
               <br>
               <a href="#rsvp" class="btn btn-sm btn-primary;"
                 style="background-color:#b48b58; border-color: #b48b58; color: white; border-radius: 40px;">Sahkan
@@ -283,9 +283,14 @@
               </tr>
             </table>
             <br>
-            <a href="./assets/ics/nurin_azrin_reception.ics" class="btn btn-primary"
+            <a href="./assets/ics/walimatulurus_nurin_azrin.ics" class="btn btn-primary"
               style="background-color:#b48b58; border-color: #b48b58; color: white; border-radius: 40px;"><i
-                class="bi bi-calendar-date"></i> Muat turun entri kalender (.ics)</a>
+                class="bi bi-calendar-date"></i> Muat turun entri kalendar (.ics)</a>
+                <br>
+                <br>
+                <a href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Walimatulurus+Nurin+%26+Azrin&details=Nurin%27s+%26+Azrin%27s+Wedding+Reception&location=D%27Inap+Desa+Seri+Iskandar&dates=20240413T030000Z/20240413T080000Z" class="btn btn-primary"
+                style="background-color:#b48b58; border-color: #b48b58; color: white; border-radius: 40px;"><i
+                  class="bi bi-calendar-date"></i> + Tambah ke Google Calendar</a>
           </div>
         </div>
       </section>
@@ -543,7 +548,7 @@
       const events = await response.json();
 
       for (let i = 0; i < events.length; i++) {
-        document.getElementById("guestbook").innerHTML += "<p><b>" + events[i].ucapan + "</b><br>" + events[i].nama + "</p><br>";
+        document.getElementById("guestbook").innerHTML += "<p><b>" + events[i].ucapan + "</b><br>-" + events[i].nama + "-</p><br>";
       }
 
     }
@@ -579,10 +584,10 @@
       // If the count down is over, write some text 
       if (distance < 0) {
         clearInterval(x);
-      document.getElementById("hari").innerHTML = "00";
-      document.getElementById("jam").innerHTML = "00";
-      document.getElementById("minit").innerHTML = "00";
-      document.getElementById("saat").innerHTML = "00";
+        document.getElementById("hari").innerHTML = "00";
+        document.getElementById("jam").innerHTML = "00";
+        document.getElementById("minit").innerHTML = "00";
+        document.getElementById("saat").innerHTML = "00";
       }
     }, 1000);
   </script>
