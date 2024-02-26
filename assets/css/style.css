@@ -1490,10 +1490,10 @@ section {
 }
 
 #footer p {
-  font-size: 15;
-  font-style: italic;
+  font-size: 14px;
+  /* font-style: italic; */
   padding: 0;
-  margin: 0 0 40px 0;
+  margin: 0 0 5px 0;
 }
 
 #footer .social-links {
